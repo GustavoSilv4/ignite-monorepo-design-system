@@ -2,12 +2,19 @@ import type { StoryObj, Meta } from '@storybook/react'
 import { Avatar, AvatarProps } from '@ignite-ui/react'
 
 export default {
-  title: 'Typograph/Avatar',
+  title: 'Data Display/Avatar',
   component: Avatar,
 
   args: {
     src: 'https://github.com/gustavosilv4.png',
     alt: 'Gustavo Silva',
+  },
+  argTypes: {
+    src: {
+      control: {
+        type: 'text',
+      },
+    },
   },
 } as Meta<AvatarProps>
 
